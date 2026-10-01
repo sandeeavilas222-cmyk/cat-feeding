@@ -1,0 +1,12 @@
+<!doctype html><meta name=viewport content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f2f3f5;font:15px Arial,"Microsoft YaHei";color:#222}main{position:fixed;bottom:0;width:100%;background:white;border-radius:22px 22px 0 0;padding:18px;box-shadow:0 -6px 25px #0002}.h{display:flex;align-items:center;gap:8px;font-size:20px;font-weight:bold;margin-bottom:5px}.x{margin-left:auto;color:#999;font-size:24px}.s{color:#999;font-size:12px;margin:0 0 13px}.g{display:grid;grid-template-columns:1fr 1fr;gap:9px}.f{text-align:center;border:1px solid #eee;border-radius:14px;padding:10px}.f.on{border:2px solid #ff6687;background:#fff6f8}.i{font-size:39px}.p{font-size:13px;color:#666;margin:4px}.b{border:0;background:#ff6687;color:white;border-radius:18px;padding:8px 25px}.ok{text-align:center;padding:35px 0}.ok b{font-size:45px}.hide{display:none}
+</style>
+<main><div class=h>🐱 <span>给小猫买点吃的吧</span><span class=x>×</span></div><p class=s>选择食物后付款，小猫就能吃到啦～</p>
+<div class=g>
+<div class=f onclick="p(this,'猫粮','5')"><div class=i>🥣</div>猫粮<div class=p>¥5.00</div><button class=b>付款</button></div>
+<div class=f onclick="p(this,'鱼肉','8')"><div class=i>🐟</div>鱼肉<div class=p>¥8.00</div><button class=b>付款</button></div>
+<div class=f onclick="p(this,'罐头','10')"><div class=i>🥫</div>罐头<div class=p>¥10.00</div><button class=b>付款</button></div>
+<div class=f onclick="p(this,'零食','6')"><div class=i>🦴</div>零食<div class=p>¥6.00</div><button class=b>付款</button></div></div>
+<div id=o class="ok hide"><b>😺</b><h2>付款成功！</h2><p id=m></p></div></main>
+<script>function p(e,n,v){e.classList.add('on');e.querySelector('.b').onclick=function(x){x.stopPropagation();document.querySelector('.g').className='hide';document.querySelector('.s').className='hide';document.querySelector('.ok').className='ok';m.innerHTML=n+' ¥'+v+' 已送给小猫～'}}</script>
